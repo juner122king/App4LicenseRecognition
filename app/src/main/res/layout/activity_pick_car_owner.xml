@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PickCarOwnerActivity">
+
+    <include layout="@layout/head_view" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F7FD"
+        android:padding="10dp"
+        android:text="按到店时间筛选"
+        android:textColor="#ff666666"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <include layout="@layout/head_date_view"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_unpick2"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="已选择3位车主"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/but_enter_order"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_c"
+            android:gravity="center"
+            android:text="确认选择"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

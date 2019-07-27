@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_view" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+
+            <com.otaliastudios.cameraview.CameraView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:keepScreenOn="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#88000000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="#88000000" />
+
+                <TextView
+                    android:id="@+id/v_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#111" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="#88000000" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#88000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="请将车牌号置于扫描区域内"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_Flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:src="@drawable/icon_flash_off" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:max="100"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:progress="0"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="车牌号"
+                android:textColor="#ff000000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/lock_type"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/button_background_b"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:stateListAnimator="@null"
+                android:text="新能源"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <com.parkingwang.keyboard.view.InputView
+            android:id="@+id/input_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            app:pwkInputTextSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_b"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:stateListAnimator="@null"
+                android:text="一键识别"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#d9d9d9" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/but_quick"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#A7D4FA"
+                android:gravity="center"
+                android:text="快速接单"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/but_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background_c"
+                android:gravity="center"
+                android:text="普通接单"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/ll_car_list"
+            layout="@layout/dialog_carlist"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

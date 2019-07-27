@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".activity.MallGoodsInfoActivity">
+
+    <include layout="@layout/head_view" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="德国马牌轮胎205/55R16 91V FR ULTC UC6适配马自达6标致307"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="¥ 400.00"
+                    android:textColor="#fff23325"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="原价：￥470"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toEndOf="@+id/price1"
+                    app:layout_constraintTop_toTopOf="@+id/price1" />
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="库存999件"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/price2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#d9d9d9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp"
+                android:text="商品详情"
+                android:textColor="#ff333333"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#d9d9d9" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="0.1dp"
+                    android:background="#d9d9d9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="10dp"
+                    android:text="已经滑到底部"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="0.1dp"
+                    android:background="#d9d9d9" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#d9d9d9" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_collection"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="收藏"
+            android:textColor="#ff333333"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_cart"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="购物车"
+                android:textColor="#ff333333"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="3dp"
+                android:src="@mipmap/icon_shopping_cart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/button_background_aaa"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/iv1"
+                tl:layout_constraintTop_toTopOf="@id/iv1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_c1"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_c"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

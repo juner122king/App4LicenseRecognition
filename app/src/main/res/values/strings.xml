@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">哥爱车汽修</string>
+    <string name="company_name">广州新干线实业有限公司</string>
+    <string name="result">"识别结果:"</string>
+    <string name="time">"识别耗时:"</string>
+    <string name="select">"选择图片"</string>
+    <string name="preview">"实时车牌识别"</string>
+
+
+    <string name="agreement">1. 质量保证期规定\n 1.1 整车修理、总成大修：20000公里或100日；\n1.2 二级维护：5000公里或30日；\n1.3 小修及专项修理：2000公里或10日；\n1.4 备注：上述保证期时间和公里数有一项达到即为超期；上述保证期从出厂之日算起；\n1.5 注意事项：凡发动机、自动波箱总成件大修，7天内必须回厂检查，3000公里回厂更换油品；无回厂记录的，一律不予保修。\n2. 委托服务协议\n2.1 贵重物品/现金请自行带走或交我公司登记保管，未作登记本公司不负赔偿责任；\n2.2 由客户自备零件引致的服务质量问题，其后果均由客户本人负责。</string>
+    <string name="agreement_title">用户委托服务及质保协议</string>
+
+
+    <string name="dialog_message_loading">加载中</string>
+    <string name="error_unknown">未知错误</string>
+    <string name="error_bad_network">没网络,请检查网络</string>
+    <string name="error_connect_server">未能连接到服务器</string>
+    <string name="error_connect_server_timeout">服务器超时了</string>
+
+
+    //蓝牙打印机
+    <string name="str_no_serialport">该设备不支持串口</string>
+    <string name="str_conn_state_disconnect">连接状态：未连接</string>
+    <string name="str_conn_state_connecting">连接状态：连接中</string>
+    <string name="str_connecting">连接中</string>
+    <string name="str_conn_state_connected">连接状态：已连接</string>
+    <string name="str_wifi_ip">请输入IP：</string>
+    <string name="str_ip">IP: </string>
+    <string name="str_port">Port: </string>
+    <string name="str_wifi_port">请输入端口号：</string>
+    <string name="str_state_query">状态查询</string>
+    <string name="str_disconnect">断开连接</string>
+    <string name="str_label_print">标签打印</string>
+    <string name="str_receipt_print">票据打印</string>
+    <string name="str_bluetooth_connect">蓝牙连接</string>
+    <string name="str_usb_connect">USB连接</string>
+    <string name="str_wifi_connect">wifi连接</string>
+    <string name="str_serialport_connect">串口连接</string>
+    <string name="str_confirm">确定</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_cann_printer">请先连接打印机</string>
+    <string name="no_dervier">没有配对的蓝牙打印机！</string>
+    <string name="str_bluetooth">蓝牙</string>
+    <string name="str_serialport">串口</string>
+    <string name="str_usb">USB</string>
+    <string name="str_wifi">WIFI</string>
+    <string name="str_conn_successful">连接成功！</string>
+    <string name="str_conn_fail">蓝牙连接失败！</string>
+    <string name="str_baudrate">波特率：</string>
+    <string name="str_serialport_path">串口路径：</string>
+    <string name="str_conn_devices">多设备</string>
+    <string name="str_conn_receipt_and_label_continuity_print">连续打印</string>
+    <string name="str_address">地址：</string>
+    <string name="gprinter001">Printer 001</string>
+    <string name="gprinter002">Printer 002</string>
+    <string name="gprinter003">Printer 003</string>
+    <string name="gprinter004">Printer 004</string>
+    <string name="disconnect">断开连接</string>
+    <string name="cut">未连接</string>
+    <string name="cutting">断开连接中...</string>
+    <string name="str_disconn">断开</string>
+    <string name="connect">连接</string>
+    <string name="connected">已连接</string>
+    <string name="connecting">连接中...</string>
+    <string name="port">接口:未设定 </string>
+    <string name="init_port_info">地址:不详</string>
+    <string name="str_enter_print_counts">请输入打印次数：</string>
+    <string name="str_choice_printer_command">请选择正确的打印机指令</string>
+    <string name="str_printer_conn_normal">打印机连接正常</string>
+    <string name="str_printer_out_of_paper">打印机缺纸</string>
+    <string name="str_printer_open_cover">打印机开盖</string>
+    <string name="str_printer_error">打印机出错</string>
+    <string name="str_state">状态：</string>
+    <string name="str_interface_undefine">接口：未设定</string>
+    <string name="str_select_printer_id">选中id为{0}的打印机</string>
+    <string name="bluetooth_is_not_enabled">蓝牙没有开启</string>
+    <string-array name="str_interf_type">
+        <item>蓝牙</item>
+        <item>网口</item>
+        <item>USB</item>
+    </string-array>
+
+
+</resources>

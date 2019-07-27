@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_view"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="8dp"
+                android:text="新干线"
+                android:textColor="#ff333333"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tl:layout_constraintBottom_toBottomOf="parent"
+                tl:layout_constraintStart_toStartOf="parent"
+                tl:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_is_new_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                tl:layout_constraintBottom_toBottomOf="parent"
+                tl:layout_constraintLeft_toLeftOf="parent"
+                tl:layout_constraintRight_toRightOf="parent"
+                tl:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="5dp"
+                android:src="@mipmap/icon_new"
+                tl:layout_constraintBottom_toBottomOf="parent"
+                tl:layout_constraintEnd_toEndOf="parent"
+                tl:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/button_background_aaa"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                tl:layout_constraintLeft_toLeftOf="@id/iv1"
+                tl:layout_constraintTop_toTopOf="@id/iv1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_gravity="center"
+            android:background="#d9d9d9"
+            android:paddingTop="20dp" />
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="54dp" />
+    </LinearLayout>
+
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tl_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        tl:tl_iconHeight="23dp"
+        tl:tl_iconWidth="23dp"
+        tl:tl_indicator_color="#2C97DE"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="#020202"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_textsize="12sp"
+        tl:tl_underline_color="#000"
+        tl:tl_underline_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1A000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+
+
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@mipmap/icon_bottom_button3_unselect" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="接单"
+                    android:textColor="#66000000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
